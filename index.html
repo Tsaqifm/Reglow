@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,16 +28,16 @@
           <div class="py-4 px-11 lg:flex lg:items-center lg:justify-end lg:py-0 lg:pr-10">
             <ul class="block lg:mt-0 lg:flex lg:items-center">
               <li>
-                <a href="#tentangOSC" class="mt-6 mb-6 flex text-base font-normal lg:mx-8 lg:mb-0 lg:mt-0 lg:font-medium lg:hover:text-blue-400">Beranda</a>
+                <a href="#beranda" class="mt-6 mb-6 flex text-base font-normal lg:mx-8 lg:mb-0 lg:mt-0 lg:font-medium lg:hover:text-rose-500">Beranda</a>
               </li>
               <li>
-                <a href="#timeline" class="mt-6 mb-6 flex text-base font-normal lg:mx-8 lg:mb-0 lg:mt-0 lg:font-medium lg:hover:text-blue-400">Testimoni</a>
+                <a href="#testimoni" class="mt-6 mb-6 flex text-base font-normal lg:mx-8 lg:mb-0 lg:mt-0 lg:font-medium lg:hover:text-rose-500">Testimoni</a>
               </li>
               <li>
-                <a href="https://news.oscpijarsekolah.id/" target="_blank" class="mt-6 mb-6 flex text-base font-normal lg:mx-8 lg:mb-0 lg:mt-0 lg:font-medium lg:hover:text-blue-400">Beli</a>
+                <a href="#beli" class="mt-6 mb-6 flex text-base font-normal lg:mx-8 lg:mb-0 lg:mt-0 lg:font-medium lg:hover:text-rose-500">Beli</a>
               </li>
               <li>
-                <a href="#pemenang" class="mt-6 mb-6 flex text-base font-normal lg:mx-8 lg:mb-0 lg:mt-0 lg:font-medium lg:hover:text-blue-400">Reseler</a>
+                <a href="#reseler" class="mt-6 mb-6 flex text-base font-normal lg:mx-8 lg:mb-0 lg:mt-0 lg:font-medium lg:hover:text-rose-500">Reseler</a>
               </li>
               <!-- <li>
                 <a href="https://pijarsekolah.id/" target="_blank" class="mt-6 mb-6 flex text-base font-normal lg:mx-8 lg:mb-0 lg:mt-0 lg:font-medium lg:hover:text-blue-400">pijarsekolah.id</a>
@@ -48,7 +48,8 @@
       </div>
     </nav>
     <main class="pt-20">
-      <div class="flex items-center justify-center">
+      <!-- BERANDA -->
+      <div id="beranda" class="flex items-center justify-center">
         <img class="w-52 lg:w-[440px]" src="dist/img/drshindy1.png" alt="drShindy" />
         <h1 class="w-36 text-xl font-extrabold lg:w-[400px] lg:text-6xl">Gonta-ganti skincare tapi belum ada yang cocok?</h1>
       </div>
@@ -78,6 +79,7 @@
         </div>
         <img class="absolute right-0 bottom-0 w-28 lg:w-60" src="dist/img/drshindy2.png" alt="drShindy" />
       </div>
+      <!-- BERANDA -->
       <!-- BAGIAN BAHAN -->
       <div>
         <h1 class="mt-10 text-center text-base font-bold lg:mt-40 lg:text-4xl">
@@ -189,10 +191,9 @@
       </div>
       <!-- YANG TERBANTU END -->
       <!-- SOLUSI MELASMA -->
-
       <!-- SOLUSI MELASMA END -->
       <!-- TESTIMONI -->
-      <div class="flex flex-col items-center justify-center bg-gradient-to-br from-[#EEB5A7] to-[#E3836B] py-10">
+      <div id="testimoni" class="flex flex-col items-center justify-center bg-gradient-to-br from-[#EEB5A7] to-[#E3836B] py-10">
         <h1 class="text-center text-base font-bold lg:text-4xl">TESTIMONI</h1>
         <div class="mt-4">
           <!-- Swiper -->
@@ -257,7 +258,7 @@
       </div>
       <!-- GLOWING MAKSIMAL END -->
       <!-- JUALAN -->
-      <div class="flex">
+      <div id="beli" class="flex bg-[#E1FFEF]">
         <div class="flex w-1/2 flex-col items-center justify-evenly text-center">
           <div>
             <h1 class="text-[10px] font-bold lg:text-2xl">HARGA 1 PAKET BASIC SET REGLOW</h1>
@@ -296,8 +297,231 @@
         <img class="w-1/2" src="dist/img/reglow2.png" alt="reglow" />
       </div>
       <!-- JUALAN END-->
+      <!-- MURAH  -->
+      <div class="flex">
+        <div class="flex w-1/2 flex-col justify-evenly">
+          <div class="pl-2 lg:pl-8">
+            <h1 class="text-base font-bold lg:text-5xl">
+              Wooow, MURAH <br />
+              BANGEETT!!!
+            </h1>
+            <h2 class="mt-1 text-[11px] font-semibold lg:text-2xl">
+              Bagaimana Cara Ambil <br />
+              PROMO REGLOW?
+            </h2>
+            <p class="mt-2 text-[8px] font-medium lg:mt-8 lg:text-lg">
+              Silahkan Klik Tombol di bawah ini untuk <br />
+              langsung terhubung dengan Sales & <br />
+              Customer Service Reglow
+            </p>
+          </div>
+          <div class="flex items-center justify-evenly">
+            <a class="w-3/5" href="">
+              <img src="dist/gif/whatsapp.gif" alt="whatsapp" />
+            </a>
+            <a class="w-3/5" href="https://shopee.co.id/skincarereglow.shop">
+              <img src="dist/img/shopee.png" alt="whatsapp" />
+            </a>
+          </div>
+        </div>
+        <img class="w-1/2" src="dist/img/reglow3.png" alt="reglow" />
+      </div>
+      <!-- MURAH END -->
+      <!-- KONSULTASI DAN PENIPUAN -->
+      <div>
+        <h1 class="mt-10 pl-4 text-center text-sm font-bold lg:mt-20 lg:text-4xl">
+          Ingin punya wajah yang Bebas Semua Masalah? <br />
+          Yuk konsul dulu dengan <br />
+          46 Beauty Consultant Reglow
+        </h1>
+        <div class="mt-10 flex flex-col items-center justify-center gap-2 lg:flex-row">
+          <div class="lg:w-1/2">
+            <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/SxLlU-ZyFlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="px-2 lg:w-1/2">
+            <h1 class="text-center text-base font-bold lg:text-start lg:text-2xl">KONSULTASI GRATIS TERBATAS UNTUK 100 ORANG PERTAMA!</h1>
+            <p class="mt-2 text-[9px] lg:text-xs lg:font-bold">Kamu akan mendapatkan pelayanan terbaik dari Beauty Consultant Reglow yang siap melayanimu setiap hari. Kamu juga akan mendapatkan bimbingan perawatan wajah hingga kamu mencapai hasil yang kamu inginkan. Yuk Amankan kesempatan bisa konsultasi bersama pakar kecantikan dengan mendapat kontak kami terlebih dahulu!</p>
+            <div class="mt-2 flex items-center justify-evenly">
+              <a class="w-3/5" href="">
+                <img src="dist/gif/whatsapp.gif" alt="whatsapp" />
+              </a>
+              <a class="w-3/5" href="https://shopee.co.id/skincarereglow.shop">
+                <img src="dist/img/shopee.png" alt="whatsapp" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex py-10">
+        <div class="flex w-1/2 flex-col justify-evenly">
+          <div class="pl-2 lg:pl-8">
+            <h1 class="text-base font-bold lg:text-5xl">
+              TAKUT<br />
+              PENIPUAN? <br />
+              GAK PUNYA <br />
+              REKENING?
+            </h1>
+            <p class="mt-2 text-[8px] font-semibold lg:text-2xl">
+              Jangan khawatir! <br />
+              Kami menyediakan metode <br />
+              pembayaran COD <br />
+              ( Bayar ketika barang sampai )
+            </p>
+          </div>
+        </div>
+        <img class="w-1/2" src="dist/img/paket.png" alt="reglow" />
+      </div>
+      <!-- KONSULTASI DAN PENIPUAN END -->
+      <!-- MEDIA -->
+      <div class="bg-gradient-to-br from-[#EEB5A7] to-[#E3836B] py-10">
+        <h1 class="pl-6 text-lg font-bold lg:pl-10 lg:text-6xl">
+          REGLOW BERHASIL <br />
+          BIKIN GEGER PUBLIK <br />
+          DAN DILIPUT MEDIA BESAR
+        </h1>
+        <!-- Swiper -->
+        <div class="swiper mySwiper2 mt-6 h-full lg:w-2/3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="dist/img/media/media1.webp" alt="media" /></div>
+            <div class="swiper-slide"><img src="dist/img/media/media2.jpg" alt="media" /></div>
+            <div class="swiper-slide"><img src="dist/img/media/image 9.png" alt="media" /></div>
+            <div class="swiper-slide"><img src="dist/img/media/image 8.png" alt="media" /></div>
+            <div class="swiper-slide"><img src="dist/img/media/image 7.png" alt="media" /></div>
+            <div class="swiper-slide"><img src="dist/img/media/image 6.png" alt="media" /></div>
+            <div class="swiper-slide"><img src="dist/img/media/image 10.png" alt="media" /></div>
+            <div class="swiper-slide"><img src="dist/img/media/image 11.png" alt="media" /></div>
+            <div class="swiper-slide"><img src="dist/img/media/image 12.png" alt="media" /></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- MEDIA END -->
+      <!-- GARANSI -->
+      <div class="relative">
+        <img src="dist/img/garansi.png" alt="" />
+        <div class="absolute left-[55%] top-1/2 -translate-x-1/2 -translate-y-1/2">
+          <h1 class="text-lg font-bold lg:text-6xl">
+            GARANSI <br />
+            UANG KEMBALI
+          </h1>
+          <h2 class="text-[9px] lg:text-2xl">Garansi uang kembali jika produk yang anda terima palsu atau rusak. Kami agen resmi Reglow terdaftar di database Reglow pusat, hanya menjual produk Reglow asli dan original</h2>
+        </div>
+        <img class="absolute -top-6 right-0 w-1/6" src="dist/img/moneyBack.png" alt="" />
+      </div>
+      <!-- GARANSI END -->
+      <!-- RESELER -->
+      <div id="reseler" class="py-10">
+        <h1 class="pl-4 text-lg font-bold lg:text-6xl">
+          Yuk.. Join Bisnis Rumahan <br />
+          dengan Join Reseller Reglow
+        </h1>
+        <h2 class="pl-4 text-[9px] font-semibold lg:mt-6 lg:text-xl">
+          RAIH PENGHASILAN PULUHAN JUTA TANPA <br />
+          HARUS KELUAR RUMAH DENGAN MENJADI <br />
+          MITRA REGLOW
+        </h2>
+        <div class="mt-4 flex">
+          <img class="w-1/2" src="dist/img/reseler.png" alt="reseler" />
+          <div class="pl-2">
+            <h1 class="text-lg font-bold lg:text-6xl">DICARI:</h1>
+            <h1 class="text-base font-bold lg:text-4xl">Partner Bisnis Seluruh Indonesia!</h1>
+            <h2 class="mt-2 text-xs font-bold lg:text-xl">Diutamakan yang berpengalaman jualan skincare atau produk kecantikan lain sebelumnya.</h2>
+          </div>
+        </div>
+      </div>
+      <!-- RESELER END -->
+      <!-- BERKENALAN -->
+      <div class="flex flex-col items-center justify-center">
+        <h1 class="text-lg font-bold lg:text-6xl">Berkenalan dengan REGLOW</h1>
+        <img class="w-2/3 lg:mt-10" src="dist/img/drshindy5.png" alt="drshindy" />
+        <h1 class="text-center text-base font-bold lg:py-10 lg:text-3xl">
+          Dr.Shindy Putri <br />
+          Selebgram & Dokter kecantikan <br />
+          Kakak dari Ria Ricis dan Adik dari Ustz Oki
+        </h1>
+        <div class="flex">
+          <img class="w-1/2" src="dist/img/drshindy6.png" alt="drshindy" />
+          <img class="w-1/2" src="dist/img/drshindy7.png" alt="drshindy" />
+        </div>
+        <div class="flex items-center justify-center bg-[#F3FFE1]">
+          <div class="flex w-3/4 flex-col items-center justify-evenly gap-2 pl-2 lg:gap-10">
+            <p class="text-[7px] font-bold lg:text-xl">REGLOW adalah sebuah brand kosmetik 2021 yang menghebohkan para pecinta skincare dan mencintai perawatan kulit yang aman, BPOM dengan hasil yang memuaskan, bisa digunakan Pria dan Wanita.</p>
+            <p class="text-[7px] font-bold lg:text-xl">Rangkaian skincare Daily Routine untuk menemani aktivitasmu setiap hari. Memiliki fungsi dalam mencegah kerusakan kulit dari luar dan dalam, menjaga kesehatan dan kecantikan kulit agar selalu tampak cerah dan bersinar.</p>
+            <p class="text-[7px] font-bold lg:text-xl">Terdiri dariGlowing Skin TreatmentFacial Wash,Glowing Skin Treatment 2 in 1 Toner & Micellar Water, danGlowing Skin Treatment Rejuvenating Intensive Cream. Kami juga menyediakan KONSULTAN KECANTIKAN KHUSUS bagi kamu yang ingin berjuang melawan masalah wajahmu bersama REGLOW</p>
+          </div>
+          <img class="w-1/4" src="dist/img/reglow4.png" alt="reglow" />
+        </div>
+      </div>
+      <!-- BERKENALAN END -->
+      <!-- KENAPA HARUS REGLWO -->
+      <div class="flex flex-col items-center justify-center">
+        <img class="w-1/4" src="dist/img/tandaTanya.png" alt="tandaTanya" />
+        <h1 class="text-center font-bold lg:mt-10 lg:text-4xl">
+          KENAPA HARUS BERBISNIS <br />
+          REGLOW ?
+        </h1>
+        <ul class="mt-4 w-3/4 list-outside list-disc text-[9px] font-bold lg:py-10 lg:text-xl">
+          <li>REGLOW sudah terdaftar BPOM, dan Halal MUI</li>
+          <li>Kualitas Produk Terbaik</li>
+          <li>Harga Terjangkau</li>
+          <li>KEUNTUNGAN SANGAT TINGGI, MINIMAL 24% setiap produk yang terjual</li>
+          <li>Dapet REWARD Menarik</li>
+          <li>Reglow merupakan Brand Besar Kosmetik Indonesia yang baru launching 2021 ini dengan Brand Ambasador Dr. Shindy Putri, Sehingga ini merupakan peluang besar untuk Anda menjadi reseller pertama di kota Anda! dibanding Anda harus join dengan Brand yang sudah lama dan sudah terlalu banyak reseller di kota Anda. Ambilah peluang ini, jadilah yang pertama dan satu-satunya Mitra Reglow di Kota Anda.</li>
+          <li>Reglow adalah Produk Skincare yang dimana menjadi kebutuhan pokok setiap wanita, sekali coba cocok akan beli berulang-ulang, cuannya juga terus terusan loh...</li>
+          <li>Dimentorin oleh praktisi pebisnis online berpengalaman</li>
+        </ul>
+        <img class="py-5 lg:py-0" src="dist/img/reglowreward.png" alt="REWARD" />
+      </div>
+      <!-- KENAPA HARUS REGLWO END -->
+      <!-- JANGAN TUNGGU  -->
+      <div class="flex flex-col items-center justify-center bg-red-500 py-5">
+        <img class="w-1/5" src="dist/gif/warning.gif" alt="warning" />
+        <h2 class="mt-4 text-xs font-bold text-white lg:text-2xl">TUNGGU APALAGI?</h2>
+        <h1 class="text-sm font-bold text-white lg:text-4xl">JANGAN TUNGGU SAMPAI BESOK</h1>
+        <p class="mt-2 text-center text-[9px] font-bold text-white lg:text-lg">
+          Waktu Terus Berjalan. <br />
+          Stok hadiah sudah menipis dan beok belum tentuiklan ini tayang di beranda HP kamu lagi.
+        </p>
+        <a class="mt-4 w-1/3" href="">
+          <img src="dist/gif/whatsapp.gif" alt="whatsapp" />
+        </a>
+      </div>
+      <!-- JANGAN TUNGGU END -->
+      <!-- PENUTUP -->
+      <div class="bg-emerald-700 py-10 text-center">
+        <h1 class="text-sm font-bold text-amber-200 lg:text-2xl">WWW.REGLOWINDONESIA.ID</h1>
+        <h3 class="text-xs font-semibold text-white lg:text-lg">Resmi dengan Jaminan Konsultasi Gratis Seumur Hidup !</h3>
+        <p class="text-[7px] font-medium italic text-amber-200 lg:text-lg">
+          HATI-HATI terhadap oknum dengan mengatas namakan penjual reglow yang menjual dibawah <br />
+          harga resmi kami, Pihak Reglow tidak bertanggung jawab atas keaslian dan efek yang ditimbulkan<br />
+          jika tetap memaksa membeli dengan harga lebih murah!
+        </p>
+      </div>
+      <!-- PENUTUP END -->
+      <!-- FOOTER -->
+      <div class="bg-[#FFBFAF] py-6 px-2">
+        <h1 class="text-sm font-bold lg:text-2xl">Agen Resmi Reglow</h1>
+        <p class="mt-1 text-[9px] font-normal lg:text-sm">
+          Jl Sisimangaraja km 10, Perumahan oma deli blok G no 27 Medan <br />
+          Medan Amplas <br />
+          20148 <br />
+          Sumatera Utara
+        </p>
+        <div class="mt-2 w-full border-t border-slate-700 border-opacity-70">
+          <h3 class="mt-2 text-center text-[9px] lg:text-sm">© Copyright <span id="year"></span><a href="https://www.reglowindonesia.net/">www.reglowindonesia.net</a></h3>
+        </div>
+      </div>
+      <!-- FOOTER END -->
+      <!-- TO TOP -->
+      <a href="#home" class="fixed bottom-4 right-4 z-50 hidden h-14 w-14 items-center justify-center rounded-full bg-black p-4 transition-all duration-300 ease-in-out hover:animate-pulse" id="to-top">
+        <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+      </a>
+      <!-- TO TOP END -->
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="dist/js/script.js"></script>
   </body>
 </html>
