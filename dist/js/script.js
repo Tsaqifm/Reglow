@@ -10,10 +10,13 @@ const navMenu = document.querySelector("#nav-menu");
 window.onscroll = function () {
   const header = document.querySelector("nav");
   const fixednav = header.offsetTop;
+  const toTop = document.getElementById("to-top");
   if (window.pageYOffset > fixednav) {
     header.classList.add("navbar-fixed");
+    toTop.classList.replace("hidden", "flex");
   } else {
     header.classList.remove("navbar-fixed");
+    toTop.classList.replace("flex", "hidden");
   }
 };
 

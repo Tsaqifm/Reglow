@@ -47,9 +47,9 @@
         </header>
       </div>
     </nav>
-    <main class="pt-20">
+    <main>
       <!-- BERANDA -->
-      <div id="beranda" class="flex items-center justify-center">
+      <div id="beranda" class="flex items-center justify-center pt-20">
         <img class="w-52 lg:w-[440px]" src="dist/img/drshindy1.png" alt="drShindy" />
         <h1 class="w-36 text-xl font-extrabold lg:w-[400px] lg:text-6xl">Gonta-ganti skincare tapi belum ada yang cocok?</h1>
       </div>
@@ -476,13 +476,26 @@
       </div>
       <!-- KENAPA HARUS REGLWO END -->
       <!-- FORM ISI -->
-      <div class="flex items-center justify-center py-10">
-        <div class="w-1/2">
-          <h1>Data Penerima</h1>
-          <div class="flex flex-col gap-2">
-            <input class="mt-2 w-full rounded-md border border-stone-400 py-2 pl-2 placeholder:text-sm focus:border-rose-400 focus:outline-none focus:ring-1 focus:ring-rose-400" type="text" name="name" id="name" placeholder="inputkan nama anda" required />
-            <input class="mt-2 w-full rounded-md border border-stone-400 py-2 pl-2 placeholder:text-sm focus:border-rose-400 focus:outline-none focus:ring-1 focus:ring-rose-400" type="tel" name="number" id="number" placeholder="masukkan no HP" required />
-            <a id="button" target="_blank" class="mt-7 w-full rounded-2xl bg-rose-800 py-2 text-center text-sm font-semibold text-white transition-all duration-300 hover:shadow-lg" type="submit">kirim</a>
+      <div class="flex flex-col items-center justify-center pb-10 lg:pt-10">
+        <h1 class="text-center text-sm font-bold lg:text-4xl">
+          PASTIKAN KAMU AMBIL PELUANG INI <br />
+          UNTUK MENJADI RESELLER REGLOW DI KOTAMU! !
+        </h1>
+        <p class="mt-2 text-center text-[9px] font-medium lg:mt-10 lg:text-xl">
+          Saya Akan Bimbing Kamu! <br />
+          Jangan Sampai Menyesal setelah kuota Reseller penuh yaa…
+        </p>
+        <span class="py-1 text-xs font-bold text-red-600 lg:text-2xl">SLOT RESELLER DIBATASI!! </span>
+        <p class="text-center text-[9px] font-medium lg:text-xl">Agar saya lebih memudah membimbing Anda jika kuota tidak terlalu banyak!</p>
+        <div class="flex flex-col items-center">
+          <h2 class="my-2 text-sm font-bold lg:mt-8 lg:text-2xl">LANGSUNG ISI DATA DIRI ANDA DIBAWAH INI!</h2>
+          <div class="w-3/4">
+            <h1 class="text-xs font-bold lg:text-xl">Data diri anda</h1>
+            <div class="flex flex-col gap-2">
+              <input class="mt-2 w-full rounded-md border border-stone-400 py-2 pl-2 placeholder:text-sm focus:border-rose-400 focus:outline-none focus:ring-1 focus:ring-rose-400" type="text" name="name" id="name" placeholder="Masukkan nama " required />
+              <input class="mt-2 w-full rounded-md border border-stone-400 py-2 pl-2 placeholder:text-sm focus:border-rose-400 focus:outline-none focus:ring-1 focus:ring-rose-400" type="tel" name="number" id="number" placeholder="Masukkan no hp" required />
+              <a id="button" target="_blank" class="mt-7 w-full rounded-2xl bg-rose-600 py-2 text-center text-sm font-semibold text-white transition-all duration-300 hover:bg-rose-800 hover:shadow-lg" type="submit">kirim</a>
+            </div>
           </div>
         </div>
       </div>
@@ -527,8 +540,8 @@
       </div>
       <!-- FOOTER END -->
       <!-- TO TOP -->
-      <a href="#home" class="fixed bottom-4 right-4 z-50 hidden h-14 w-14 items-center justify-center rounded-full bg-black p-4 transition-all duration-300 ease-in-out hover:animate-pulse" id="to-top">
-        <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+      <a href="#beranda" class="fixed bottom-6 right-6 z-50 hidden h-9 w-9 items-center justify-center rounded-xl bg-rose-600 transition-all duration-300 ease-in-out hover:animate-pulse lg:h-14 lg:w-14 lg:rounded-2xl lg:p-4" id="to-top">
+        <span class="mt-2 block h-2 w-2 rotate-45 border-t-2 border-l-2"></span>
       </a>
       <!-- TO TOP END -->
     </main>
