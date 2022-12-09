@@ -17,6 +17,13 @@ window.onscroll = function () {
   }
 };
 
+const buttonKirim = document.querySelector("#button");
+buttonKirim.addEventListener("click", function () {
+  const nama = document.querySelector("#name");
+  const nomor = document.querySelector("#number");
+  buttonKirim.setAttribute("href", `https://api.whatsapp.com/send/?phone=6285156097038&text=Halo+nama+saya+${nama.value}+dan+nomer+hp+saya+${nomor.value}&type=phone_number&app_absent=0`);
+});
+
 hamburger.addEventListener("click", function () {
   kotak.classList.toggle("hidden");
   x.classList.toggle("hidden");
