@@ -1133,11 +1133,6 @@ video {
   font-size: 7px;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .font-normal{
   font-weight: 400;
 }
@@ -1583,10 +1578,5 @@ body {
   .lg\:hover\:text-rose-500:hover{
     --tw-text-opacity: 1;
     color: rgb(244 63 94 / var(--tw-text-opacity));
-  }
-
-  .lg\:hover\:text-blue-400:hover{
-    --tw-text-opacity: 1;
-    color: rgb(96 165 250 / var(--tw-text-opacity));
   }
 }

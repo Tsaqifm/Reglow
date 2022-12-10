@@ -7,7 +7,8 @@ const x = document.querySelector("#x");
 const navMenu = document.querySelector("#nav-menu");
 
 //navbarfixed
-window.onscroll = function () {
+window.addEventListener("scroll", navbar);
+function navbar() {
   const header = document.querySelector("nav");
   const fixednav = header.offsetTop;
   const toTop = document.getElementById("to-top");
@@ -18,8 +19,9 @@ window.onscroll = function () {
     header.classList.remove("navbar-fixed");
     toTop.classList.replace("flex", "hidden");
   }
-};
+}
 
+// form button
 const buttonKirim = document.querySelector("#button");
 buttonKirim.addEventListener("click", function () {
   const nama = document.querySelector("#name");
@@ -27,13 +29,14 @@ buttonKirim.addEventListener("click", function () {
   buttonKirim.setAttribute("href", `https://api.whatsapp.com/send/?phone=6282283370668&text=Halo+nama+saya+${nama.value}+dan+nomer+hp+saya+${nomor.value}&type=phone_number&app_absent=0`);
 });
 
+// hidden hamburger
 hamburger.addEventListener("click", function () {
   kotak.classList.toggle("hidden");
   x.classList.toggle("hidden");
   navMenu.classList.toggle("hidden");
 });
 
-// klik di luar hamburger
+// click on the outside hamburger
 window.addEventListener("click", function (e) {
   if (e.target != navMenu && e.target != hamburger && e.target != kotak && e.target != kotak2) {
     hamburger.classList.remove("hamburger-active");
@@ -43,7 +46,7 @@ window.addEventListener("click", function (e) {
   }
 });
 
-//GET YEAR TO FOOTER(COPYRIGHT)
+//get year from footer(COPYRIGHT)
 (() => {
   const date = new Date();
   let year = date.getFullYear();
@@ -51,39 +54,40 @@ window.addEventListener("click", function (e) {
   return year;
 })();
 
-// ANIMATION COUNTER
-// window.onscroll = myScroll;
-// var counter = 0; // Global Variable
-// function myScroll() {
-//   if (counter == 0) {
-//     // if counter is 1, it will not execute
-//     if (window.pageYOffset > 3316) {
-//       // count animation
-//       function countTo() {
-//         let from = 340000;
-//         let to = 342178;
-//         let step = to > from ? 1 : -1;
-//         let interval = 1;
+// counter animation
+window.addEventListener("scroll", myScroll);
+window.onscroll = myScroll;
+var counter = 0; // Global Variable
+function myScroll() {
+  if (counter == 0) {
+    // if counter is 1, it will not execute
+    if (window.pageYOffset > 3316) {
+      // count animation
+      function countTo() {
+        let from = 340000;
+        let to = 342178;
+        let step = to > from ? 1 : -1;
+        let interval = 1;
 
-//         if (from == to) {
-//           document.querySelector("#output").textContent = from;
-//           return;
-//         }
+        if (from == to) {
+          document.querySelector("#output").textContent = from;
+          return;
+        }
 
-//         let counter = setInterval(function () {
-//           from += step;
-//           document.querySelector("#output").textContent = from;
+        let counter = setInterval(function () {
+          from += step;
+          document.querySelector("#output").textContent = from;
 
-//           if (from == to) {
-//             clearInterval(counter);
-//           }
-//         }, interval);
-//       }
-//       countTo();
-//       counter++; // increment the counter by 1, new value = 1
-//     }
-//   }
-// }
+          if (from == to) {
+            clearInterval(counter);
+          }
+        }, interval);
+      }
+      countTo();
+      counter++; // increment the counter by 1, new value = 1
+    }
+  }
+}
 
 // from libarary swiper.js
 var swiper = new Swiper(".mySwiper", {
